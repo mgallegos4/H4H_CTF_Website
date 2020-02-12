@@ -79,12 +79,13 @@
 		<body>
 			
 		<h2>Login Form</h2>
-			
-			<form action="/login.html" method="post">
+			<!--form action="/login.html"
+			<?php if(isset($_POST['uname']) and isset($_POST['pwd']) [html code]; php>-->
+			<form method="POST" action="/index.html">
 						
 			 <div class="container">
 			 <label for="uname"><b>Username</b></label>
-			 <input type="text" placeholder="Enter Username = admin" name="uname" required>
+			 <input type="text" placeholder="Enter Username = admin" name="uname" value="<?php echo $uname;?>"required>
 								  
 			 <label for="psw"><b>Password</b></label>
 			 <input type="password" placeholder="Enter Password = passwd" name="psw" required>          
